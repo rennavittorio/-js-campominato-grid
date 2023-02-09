@@ -19,5 +19,9 @@
 }
 
 .cell.active {
-    background-color: #ffd43b;
+    background-color: #00e066;
+}
+
+.cell.active.bomb {
+    background-color: #c41228;
 }

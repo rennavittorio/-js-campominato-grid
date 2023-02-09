@@ -24,21 +24,27 @@
                     <div class="col">
                         <div class="game__input p-2">
                             <label for="colSelection" class="form-label">Select col number</label>
-                            <input type="number" class="form-control" id="colSelection" placeholder="">
+                            <input type="number" class="form-control" id="colSelection" min="5" max="10" placeholder="from 5 to 10">
                         </div>
                     </div>
 
                     <div class="col">
                         <div class="game__input p-2">
                             <label for="rowSelection" class="form-label">Select row number</label>
-                            <input type="number" class="form-control" id="rowSelection" placeholder="">
+                            <input type="number" class="form-control" id="rowSelection" min="5" max="10" placeholder="from 5 to 10">
                         </div>
                     </div>
 
                     <div class="col">
                         <div class="game__input p-2">
                             <label for="levelSelection" class="form-label">Select level</label>
-                            <input type="number" class="form-control" id="levelSelection" placeholder="">
+                            <select class="form-select" aria-label="Default select example" id="levelSelection" value="">
+                                <option value="default" selected>Choose a level</option>
+                                <option value="easy">Easy</option>
+                                <option value="medium">Medium</option>
+                                <option value="hard">Hard</option>
+                            </select>
+                            <!-- <input type="number" class="form-control" id="levelSelection" min="1" max="3" placeholder="from 1 to 3"> -->
                         </div>
                     </div>
 
@@ -69,5 +75,6 @@
 
 
     <script src="./js/app.js"></script>
+    <!-- <script src="./js/test.js"></script> -->
 </body>
 </html>
