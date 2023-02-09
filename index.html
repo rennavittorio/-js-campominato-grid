@@ -9,7 +9,57 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
 </head>
-<body>
+<body class="body">
+
+    <main class="main">
+        <section class="game-title">
+            <div class="container py-3 text-center">
+                CAMPO MINATO
+            </div>
+        </section>
+
+        <section class="game-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="game__input p-2">
+                            <label for="colSelection" class="form-label">Select col number</label>
+                            <input type="number" class="form-control" id="colSelection" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="game__input p-2">
+                            <label for="rowSelection" class="form-label">Select row number</label>
+                            <input type="number" class="form-control" id="rowSelection" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="game__input p-2">
+                            <label for="levelSelection" class="form-label">Select level</label>
+                            <input type="number" class="form-control" id="levelSelection" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="col-12 d-flex justify-content-center">
+                        <div class="game__input p-2">
+                            <button type="button" class="btn btn-primary">Play</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="game-field">
+            <div class="container">
+                <div class="game-grid">
+
+                </div>
+            </div>
+        </section>
+    </main>
     
 
 
