@@ -74,12 +74,27 @@ playBtnElement.addEventListener('click', function(){
             cellElement.addEventListener('click', function(){
                 console.log(i + 1);
                 cellElement.classList.toggle('active')
+
             })
             
             
         }
         
         console.log('this are my bombs', bombList);
+        
+        //se bomba, perdi
+        for(let i = 0; i < bombList.length; i++){
+            let bombElement = bombList[i];
+
+            bombElement.addEventListener('click', function(){
+                if (bombElement.classList.contains('bomb')){
+                    alert('you lose');
+                    gridElement.innerHTML = ``; //resetta campo ad ogni click
+                }
+
+            })
+
+        }
 
     }
     
