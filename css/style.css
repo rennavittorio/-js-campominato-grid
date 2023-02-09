@@ -1,4 +1,23 @@
 .body {
     height: 100vh;
-    background-color: #eee;
+    background-color: #f3f3f3;
+}
+
+
+.game-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.game-grid > * {
+    border: 1px solid #d3d3d3;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 75%;
+}
+
+.cell.active {
+    background-color: #ffd43b;
 }
